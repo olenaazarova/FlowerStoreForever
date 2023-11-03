@@ -16,6 +16,11 @@ public class FlowerController {
     }
 
 
+    @GetMapping("/hello")
+    public String getHello() {
+        return "hello";
+    }
+
     @GetMapping("/list")
     public List<Flower> getFlower() {
         return flowerService.getFlowers();
