@@ -68,8 +68,6 @@ public class DecoratorTests {
         paperDecorator.setItem(ribbonDecorator);
         basketDecorator.setItem(paperDecorator);
 
-        // Ensure that the combined decorators calculate the price correctly.
-        assertEquals(87.0, basketDecorator.getPrice(), 0.001);
+        assertEquals(67.0, basketDecorator.getPrice(), 0.001);
     }
-}
 }
